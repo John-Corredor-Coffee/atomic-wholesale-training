@@ -23,7 +23,7 @@ function doPost(e) {
         'Phone',
         'Seats',
         'Attendee Names',
-        'Day Rank (1st → 5th)',
+        'Timeslot Rank (1st → 7th)',
         'Time Rank (1st → 2nd)',
         'Notes',
         'Status'
@@ -42,8 +42,8 @@ function doPost(e) {
       data.phone         || '',
       data.seats         || 1,
       data.attendees     || '',
-      data.day_rank      || '',
-      data.time_rank     || '',
+      data.timeslot_rank || '',
+      '',
       data.notes         || '',
       'Pending'
     ]);
@@ -62,8 +62,7 @@ function doPost(e) {
       'Phone:      ' + (data.phone         || '—'),
       'Seats:      ' + (data.seats         || '—'),
       'Attendees:  ' + (data.attendees     || '—'),
-      'Day Pref:   ' + (data.day_rank      || '—'),
-      'Time Pref:  ' + (data.time_rank     || '—'),
+      'Timeslot Rank: ' + (data.timeslot_rank || '—'),
       'Notes:      ' + (data.notes         || '—'),
       '',
       'View sheet: ' + SHEET_URL

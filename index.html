@@ -44,6 +44,11 @@
       top: 0;
       z-index: 100;
     }
+    .nav-logo {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
     .nav-brand {
       font-family: 'Cooper Black', serif;
       font-size: 15px;
@@ -80,7 +85,7 @@
     /* ── INFO STRIP ── */
     .info-strip {
       background: #e8f8f6;
-      border-left: 3px solid #7ecec4;
+      border-left: 3px solid #71dbd4;
       padding: 14px 18px;
       margin-bottom: 28px;
       font-size: 13px;
@@ -120,7 +125,7 @@
       margin-bottom: 6px;
       letter-spacing: 0.02em;
     }
-    label .required { color: #7ecec4; margin-left: 2px; }
+    label .required { color: #71dbd4; margin-left: 2px; }
     label .hint { font-weight: 400; color: rgba(0,0,0,0.4); font-size: 12px; margin-left: 4px; }
 
     input[type="text"],
@@ -210,12 +215,12 @@
     }
     .rank-item.dragging {
       background: #e8f8f6;
-      border-color: #7ecec4;
+      border-color: #71dbd4;
       box-shadow: 0 4px 16px rgba(0,0,0,0.10);
       cursor: grabbing;
     }
     .rank-item.drag-over {
-      border-color: #7ecec4;
+      border-color: #71dbd4;
       background: #f0faf9;
     }
     .rank-badge {
@@ -316,7 +321,7 @@
 <div class="announcement">Atomic Coffee Roasters &mdash; Wholesale Partner Portal</div>
 
 <nav>
-  <span class="nav-brand">Atomic Coffee Roasters</span>
+  <img src="ACR-logo.png" alt="Atomic Coffee Roasters" class="nav-logo">
   <span class="nav-sub">Barista Training</span>
 </nav>
 
@@ -390,25 +395,25 @@
         <div class="field-group">
           <label>Drag to rank timeslots from most to least preferred <span class="required">*</span></label>
           <ul class="rank-list" id="timeslot-rank-list">
-            <li class="rank-item" data-value="Monday PM">
-              <span class="rank-badge">1</span>
-              <span class="rank-handle">&#9776;</span>
-              <div><div class="rank-text">Monday PM</div><div class="rank-sub">~1:00pm – 4:00pm</div></div>
-            </li>
             <li class="rank-item" data-value="Tuesday AM">
-              <span class="rank-badge">2</span>
+              <span class="rank-badge">1</span>
               <span class="rank-handle">&#9776;</span>
               <div><div class="rank-text">Tuesday AM</div><div class="rank-sub">~9:00am – 12:00pm</div></div>
             </li>
             <li class="rank-item" data-value="Tuesday PM">
-              <span class="rank-badge">3</span>
+              <span class="rank-badge">2</span>
               <span class="rank-handle">&#9776;</span>
               <div><div class="rank-text">Tuesday PM</div><div class="rank-sub">~1:00pm – 4:00pm</div></div>
             </li>
             <li class="rank-item" data-value="Wednesday AM">
-              <span class="rank-badge">4</span>
+              <span class="rank-badge">3</span>
               <span class="rank-handle">&#9776;</span>
               <div><div class="rank-text">Wednesday AM</div><div class="rank-sub">~9:00am – 12:00pm</div></div>
+            </li>
+            <li class="rank-item" data-value="Wednesday PM">
+              <span class="rank-badge">4</span>
+              <span class="rank-handle">&#9776;</span>
+              <div><div class="rank-text">Wednesday PM</div><div class="rank-sub">~1:00pm – 4:00pm</div></div>
             </li>
             <li class="rank-item" data-value="Thursday AM">
               <span class="rank-badge">5</span>
@@ -428,14 +433,6 @@
           </ul>
           <p class="rank-unavailable-label">Currently Unavailable</p>
           <ul class="rank-list">
-            <li class="rank-item unavailable" data-value="Monday AM">
-              <span class="rank-handle">&#9776;</span>
-              <div><div class="rank-text">Monday AM</div><div class="rank-sub">~9:00am – 12:00pm</div></div>
-            </li>
-            <li class="rank-item unavailable" data-value="Wednesday PM">
-              <span class="rank-handle">&#9776;</span>
-              <div><div class="rank-text">Wednesday PM</div><div class="rank-sub">~1:00pm – 4:00pm</div></div>
-            </li>
             <li class="rank-item unavailable" data-value="Friday PM">
               <span class="rank-handle">&#9776;</span>
               <div><div class="rank-text">Friday PM</div><div class="rank-sub">~1:00pm – 4:00pm</div></div>

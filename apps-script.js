@@ -3,7 +3,7 @@
 // then copy the deployment URL into index.html where it says YOUR_APPS_SCRIPT_URL_HERE.
 
 const SHEET_NAME      = 'Training Requests';
-const NOTIFY_EMAIL    = 'john.corredor@atomicroastery.com';
+const NOTIFY_EMAIL    = 'jonathan@atomicroastery.com';
 const SHEET_URL       = 'https://docs.google.com/spreadsheets/d/1LrKa_un2EmTS6znlAnLQrLXJj5REkjhFJp5dWBXyvwk/edit#gid=21216591';
 
 function doPost(e) {

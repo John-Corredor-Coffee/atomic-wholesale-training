@@ -24,11 +24,10 @@ function doPost(e) {
         'Seats',
         'Attendee Names',
         'Timeslot Rank (1st → 7th)',
-        'Time Rank (1st → 2nd)',
         'Notes',
         'Status'
       ]);
-      sheet.getRange(1, 1, 1, 11).setFontWeight('bold').setBackground('#1c1008').setFontColor('#d4a96a');
+      sheet.getRange(1, 1, 1, 10).setFontWeight('bold').setBackground('#1c1008').setFontColor('#d4a96a');
       sheet.setFrozenRows(1);
     }
 
@@ -43,13 +42,12 @@ function doPost(e) {
       data.seats         || 1,
       data.attendees     || '',
       data.timeslot_rank || '',
-      '',
       data.notes         || '',
       'Pending'
     ]);
 
     // Auto-resize columns for readability
-    sheet.autoResizeColumns(1, 11);
+    sheet.autoResizeColumns(1, 10);
 
     // Email notification
     const subject = '☕ New Training Request — ' + (data.business || 'Unknown Business');
